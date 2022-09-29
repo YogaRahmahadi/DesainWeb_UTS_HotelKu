@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #3498db;
+    }
+    
+    /* Increase the font size of the heading */
+    .header h1 {
+      font-size: 40px;
+    }
+    
+    /* Style the top navigation bar */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    /* Style the navigation bar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    
+    /* Right-aligned link */
+    .navbar a.right {
+      float: right;
+    }
+    
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {   
+        flex-direction: column;
+      }
+    }
+    
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="cekharga.html">Cek Harga</a>
+        <a href="#">Contact</a>
+        <a href="index.html" class="right">Logout</a>
+    </div>
+
+    <h1>CEK HARGA</h1>
+                <div class="textbox">
+                    <label for="Lantai">Lantai :</label>
+                    <input type="text" placeholder="Lantai" name="" value="">
+                </div>
+                <div class="textbox">
+                    <label for="">Type :</label>
+                    <input type="text" placeholder="Type" name="" value="">
+                </div>
+                <div class="textbox"> 
+                    <label for="">Jumlah Hari :</label>
+                    <input type="text" placeholder="Jumlah Hari" name="" value="">
+                </div>
+                <div class="textbox"> 
+                    <label for="">Diskon :</label>
+                    <input type="text" placeholder="Diskon" name="" value="">
+                </div>
+                <button><a class="text" href="">CHECK</a></button> </b>
+                <p><b>Total transaksi adalah Rp 1050000</b> </p>
+                <p><b>Total diskon adalah Rp 1000000</b> </p>
+                <br>
+                <p><b>Yang harus dibayarkan adalah Rp 950000</b> </p>

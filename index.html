@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HotelKu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center><h2>HotelKu</h2></center>
+	<div class="login">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label>Username :</label>
+				<input type="text" name="username" id="username" />
+			</div>
+			<div>
+				<label>Password :</label>
+				<input type="password" name="password" id="password" />
+			</div>
+			<div>
+                <a href="home.html" value="Login" class="tombol">Login</a></p>
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var username = document.getElementById("username").value;
+		var password = document.getElementById("password").value;
+		if (username != "" && password != "") {
+			return true;
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+		}
+	}
+</script>
+</html>
